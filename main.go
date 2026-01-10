@@ -1,32 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"chat/alex"
+	"chat/nat"
+	"chat/user"
+	"chat/val"
+)
 
 func main() {
-	fmt.Println("func main was called")
-	printPersonalData()
-	acceptor("Alex", "Timofeev", 54)
-	fmt.Println("func main has ended")
-}
+	name := "Max"
+	user.GreetUser(name)
 
-func printPersonalData() {
-	fmt.Println("func printPersonalData was called")
-	firstName := "Alex"
-	secondName := "Timofeev"
 	age := 54
-	fmt.Println(firstName)
-	fmt.Println(secondName)
-	fmt.Println(age)
-	fmt.Println("func printPersonalData has ended")
-}
+	alex.PrintAge(age)
 
-func acceptor(
-	firstName string,
-	secondName string,
-	age int,
-) {
-	fmt.Println("func acceptor was called")
-	fmt.Println(firstName, secondName, age)
-	fmt.Println("func acceptor hs ended")
+	name = "Nat"
+	nat.GreetUser(name, age)
 
+	age = 21
+	val.AboutMe(age)
 }
