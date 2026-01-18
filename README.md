@@ -1,4 +1,14 @@
+## About go language
 
-Test
-Home
-Commit
+value-
+
+value type-
+
+variable-
+
+function-
+
+main function-
+
+package-
+
