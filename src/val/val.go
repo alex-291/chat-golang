@@ -1,8 +1,9 @@
 package val
 
-import "fmt"
+func GetAgeAndName() (int, string) {
+	return 21, "Valery"
+}
 
-func AboutMe(age int) {
-	fmt.Println("Hello, this is massage about Me")
-	fmt.Println("My name is Valery. I'm", age)
+func GetAddress() string {
+	return "Topoleva, 4"
 }

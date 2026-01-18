@@ -1,9 +1,8 @@
 package nat
 
-import "fmt"
-
-func GreetUser(name string, age int) {
-	fmt.Println("This is massage from package nat")
-	fmt.Println("Hello, everybody! I'm", name)
-	fmt.Println("I'm", age, "old years")
+func GetAgeAndName() (int, string) {
+	return 54, "Nat"
+}
+func GetAddress() string {
+	return "Topoleva 4"
 }

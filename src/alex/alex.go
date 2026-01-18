@@ -1,8 +1,9 @@
 package alex
 
-import "fmt"
+func GetAgeAndName() (int, string) {
+	return 21, "alex"
+}
 
-func PrintAge(age int) {
-	fmt.Println("This is massage from package alex")
-	fmt.Println("Alex is", age, "years old")
+func GetAddress() string {
+	return "Topoleva 4"
 }

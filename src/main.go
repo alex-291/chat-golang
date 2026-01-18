@@ -2,29 +2,36 @@ package main
 
 import (
 	"chat/src/alex"
-	"chat/src/family"
 	"chat/src/nat"
-	"chat/src/user"
 	"chat/src/val"
+	"fmt"
 )
 
 func main() {
-	name := "Max"
-	user.GreetUser(name)
+	age, name := 51, "alex"
+	fmt.Println(age, name)
 
-	age := 54
-	alex.PrintAge(age)
+	anotherage, anothername := alex.GetAgeAndName()
+	fmt.Println(anotherage, anothername)
 
-	name = "Nat"
-	nat.GreetUser(name, age)
+	address := alex.GetAddress()
+	fmt.Println(address)
 
-	age = 21
-	val.AboutMe(age)
+	ageN, nameN := 55, "Nat"
+	fmt.Println(ageN, nameN)
 
-	anorherName := "Cris"
-	family.GreetUser(anorherName)
+	onemoreage, onemorename := nat.GetAgeAndName()
+	fmt.Println(onemoreage, onemorename)
 
-	date := 29
-	month := "February"
-	family.ByeByeUser(anorherName, date, month)
+	onemoreaddress := nat.GetAddress()
+	fmt.Println(onemoreaddress)
+
+	nameV, ageV := "Valery", 21
+	fmt.Println(nameV, ageV)
+
+	anothernameV, anotherageV := val.GetAgeAndName()
+	fmt.Println(anothernameV, anotherageV)
+
+	anotheraddressV := val.GetAddress()
+	fmt.Println(anotheraddressV)
 }
