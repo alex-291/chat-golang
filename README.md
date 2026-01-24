@@ -8,6 +8,8 @@
 to get the changes from the remote: `git pull`
 ### About go language
 
+to run go program: `go run <path to main.go file>`. For the current program: `go run src/main.go`
+
 value-
 
 value type-
