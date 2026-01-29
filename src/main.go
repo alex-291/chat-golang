@@ -4,6 +4,12 @@ import "fmt"
 
 func main() {
 
+	var otherdate int
+
+	otherdate = 101
+
+	fmt.Println(otherdate)
+
 	var name string
 
 	name = "This is test, This is test, v, This is test"
@@ -27,6 +33,8 @@ func main() {
 	fmt.Println(boolArray)
 
 	number := [3]int{10, 20, 30}
+
+	fmt.Println(number)
 
 	fmt.Println(number, "length:", len(number))
 
