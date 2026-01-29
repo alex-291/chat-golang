@@ -10,15 +10,17 @@ to get the changes from the remote: `git pull`
 
 to run go program: `go run <path to main.go file>`. For the current program: `go run src/main.go`
 
-value-
+### Go concepts
 
-value type-
+**value**: specific unit of data. example: `"Max"`, `54`, `true`
 
-variable-
+**value type**: category of data. example: `string`, `int`, `bool`
 
-function-
+**variable**: named storage for a value. syntax: `name := "Alex"`
 
-main function-
+**function**: reusable block of code to perform a task. syntax: `func Name() {}`
 
-package-
+**main function**: entry point where program execution begins. syntax: `func main() {}`
+
+**package**: folder containing go files to organize code. syntax: `package name`
 
