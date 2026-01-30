@@ -3,44 +3,31 @@ package main
 import "fmt"
 
 func main() {
+	number := uint8(255)
 
-	var otherdate int
+	fmt.Println("value", number)
+	fmt.Println("address", &number)
 
-	otherdate = 101
+	numberAddress := &number
+	fmt.Println(numberAddress)
 
-	fmt.Println(otherdate)
-
-	var name string
-
-	name = "This is test, This is test, v, This is test"
-
-	fmt.Println(name)
-
-	var byteArray [10]byte
-
-	fmt.Println(byteArray)
-
-	var intArray [3]int
-
-	intArray = [3]int{299, 10, 50}
-
-	fmt.Println(intArray, "length:", len(intArray))
-
-	fmt.Println("first number is", intArray[2])
-
-	boolArray := [1]bool{true}
-
-	fmt.Println(boolArray)
-
-	number := [3]int{10, 20, 30}
-
-	fmt.Println(number)
-
-	fmt.Println(number, "length:", len(number))
-
-	number[1] = 7
-
-	for i, v := range number {
+	numbersArray := [3]int{10, 20, 30}
+	fmt.Println(numbersArray, "length:", len(numbersArray))
+	numbersArray[1] = 7
+	for i, v := range numbersArray {
 		fmt.Println("На полке №", i, "лежит:", v)
 	}
+
+	numbersSlice := []int{10}
+	fmt.Println(numbersSlice, "length:", len(numbersSlice), "capacity:", cap(numbersSlice))
+
+	numbersSlice = append(numbersSlice, -2)
+	fmt.Println(numbersSlice, "length:", len(numbersSlice), "capacity:", cap(numbersSlice))
+
+	firstElement := numbersSlice[0]
+	fmt.Println(firstElement)
+
+	numbersSlice[0] = 46
+	fmt.Println(numbersSlice, "length:", len(numbersSlice), "capacity:", cap(numbersSlice))
+
 }

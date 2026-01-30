@@ -14,7 +14,9 @@ to run go program: `go run <path to main.go file>`. For the current program: `go
 
 **value**: specific unit of data. example: `"Max"`, `54`, `true`
 
-**value type**: category of data. example: `string`, `int`, `bool`
+**simple value type**: category of data. example: `int`, `bool`, `[5]int`, `*int`
+
+**complex value type**: category of data. example: `string`, `any`, `[]int`
 
 **variable**: named storage for a value. syntax: `name := "Alex"`
 
